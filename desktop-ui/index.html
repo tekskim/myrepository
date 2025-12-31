@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Desktop UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Desktop UI Background -->
+    <div class="desktop-background">
+        <!-- Top Navigation Bar -->
+        <div class="desktop-topbar">
+            <div class="topbar-left">
+                <div class="domain-selector">
+                    <div class="domain-icon-wrapper">
+                        <img src="https://www.figma.com/api/mcp/asset/49693fc4-1a71-4c99-92b5-cc2741978756" alt="Symbol" class="domain-icon-img">
+                    </div>
+                    <span class="domain-name">Domain A</span>
+                </div>
+                <div class="topbar-separator"></div>
+                <div class="topbar-icons">
+                    <div class="topbar-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/ee2a3b97-8e1f-4068-ae49-ba5ed40b92e8" alt="Storage" class="topbar-icon-img">
+                    </div>
+                    <div class="topbar-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/01b7b2f4-b727-46ab-9c25-67546ceea4aa" alt="Container" class="topbar-icon-img">
+                    </div>
+                    <div class="topbar-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/ed1d1bd7-9f3a-49c3-a40f-78476bac8fb7" alt="AI" class="topbar-icon-img">
+                    </div>
+                    <div class="topbar-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/5fd042ef-c8c0-4707-87f0-0d479297592f" alt="Agent" class="topbar-icon-img">
+                    </div>
+                </div>
+            </div>
+            <div class="topbar-right">
+                <div class="topbar-action-icons">
+                    <div class="topbar-action-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/57487d84-e7ba-4971-a33b-80e25c8982f3" alt="Adjustments" class="topbar-action-icon-img">
+                    </div>
+                    <div class="topbar-action-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/88fbf20d-9bb9-4389-8c5f-b3eab71d75c8" alt="User" class="topbar-action-icon-img">
+                    </div>
+                    <div class="topbar-action-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/78bb2dcd-7b13-4a03-814c-28b225ba859a" alt="Bell" class="topbar-action-icon-img">
+                    </div>
+                </div>
+                <div class="topbar-separator"></div>
+                <div class="topbar-app-icon chatbot-toggle-btn" id="chatbot-toggle-btn" title="AI Chatbot">
+                    <img src="https://www.figma.com/api/mcp/asset/0a2f074c-245f-4204-9696-c39567a17928" alt="AI Chatbot" class="topbar-app-icon-img">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Desktop Icons Grid - Figma Design -->
+        <div class="desktop-icons">
+            <div class="desktop-icon">
+                <div class="icon-image-wrapper">
+                    <img src="https://www.figma.com/api/mcp/asset/2b08a382-5154-49e3-8e39-7e3820859685" alt="IAM" class="icon-image">
+                </div>
+                <span class="icon-label">IAM</span>
+            </div>
+            <div class="desktop-icon">
+                <div class="icon-image-wrapper">
+                    <img src="https://www.figma.com/api/mcp/asset/d8fccec3-a7ae-4154-bf34-f41c2f2336d2" alt="Compute" class="icon-image">
+                </div>
+                <span class="icon-label">Compute</span>
+            </div>
+            <div class="desktop-icon">
+                <div class="icon-image-wrapper">
+                    <img src="https://www.figma.com/api/mcp/asset/4cb0ef20-6426-4552-8b19-17dde8cc1764" alt="Storage" class="icon-image">
+                </div>
+                <span class="icon-label">Storage</span>
+            </div>
+            <div class="desktop-icon">
+                <div class="icon-image-wrapper">
+                    <img src="https://www.figma.com/api/mcp/asset/65cd61e2-7aed-4177-96e2-0ebc388de201" alt="Container" class="icon-image">
+                </div>
+                <span class="icon-label">Container</span>
+            </div>
+            <div class="desktop-icon">
+                <div class="icon-image-wrapper">
+                    <img src="https://www.figma.com/api/mcp/asset/40055eb2-2fba-4513-8bb9-258c50e16e5c" alt="AI Platform" class="icon-image">
+                </div>
+                <span class="icon-label">AI Platform</span>
+            </div>
+            <div class="desktop-icon">
+                <div class="icon-image-wrapper">
+                    <img src="https://www.figma.com/api/mcp/asset/92fc1c3e-990f-499f-a1cd-e59aef2abc4e" alt="Agent Ops" class="icon-image">
+                </div>
+                <span class="icon-label">Agent Ops</span>
+            </div>
+            <div class="desktop-icon" id="settings-icon" data-app="settings">
+                <div class="icon-image-wrapper">
+                    <img src="https://www.figma.com/api/mcp/asset/2b1b1c03-5d54-417b-bcdb-0bb38d552395" alt="Settings" class="icon-image">
+                </div>
+                <span class="icon-label">Settings</span>
+            </div>
+            <div class="desktop-icon desktop-icon-admin">
+                <div class="admin-icon-container">
+                    <div class="admin-icon-row">
+                        <img src="https://www.figma.com/api/mcp/asset/a94b7334-9906-42d5-a013-0792e89da33c" alt="Storage Admin" class="admin-icon">
+                        <img src="https://www.figma.com/api/mcp/asset/62ca80bd-7288-48ea-b962-362701843187" alt="Compute Admin" class="admin-icon">
+                    </div>
+                    <div class="admin-icon-row">
+                        <img src="https://www.figma.com/api/mcp/asset/2e23548f-a5c0-4fd2-bc22-202ea4c45b69" alt="Cloud Builder" class="admin-icon">
+                    </div>
+                </div>
+                <span class="icon-label">Admin Center</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Window (Modal/Overlay) -->
+    <div class="settings-window-container" id="settings-window-container" style="display: none;">
+        <div class="settings-window" id="settings-window">
+            <!-- Window Header -->
+            <div class="window-header">
+                <div class="window-title">
+                    <span class="window-icon">⚙️</span>
+                    <span>Settings</span>
+                </div>
+                <div class="window-controls">
+                    <button class="window-control-btn minimize">−</button>
+                    <button class="window-control-btn maximize">□</button>
+                    <button class="window-control-btn close">×</button>
+                </div>
+            </div>
+            
+            <div class="settings-container">
+                <!-- Left Sidebar Navigation -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <div class="nav-section">
+                            
+                            <!-- General -->
+                            <div class="nav-item-group">
+                                <div class="nav-item active" data-page="general">
+                                    <span class="nav-icon">
+                                        <img src="https://www.figma.com/api/mcp/asset/042aa139-84c1-4b59-b9a8-3d3e1e710e42" alt="Settings" class="nav-icon-img">
+                                    </span>
+                                    <span class="nav-label">General</span>
+                                </div>
+                            </div>
+
+                            <!-- Account -->
+                            <div class="nav-item-group">
+                                <div class="nav-item" data-page="account">
+                                    <span class="nav-icon">
+                                        <img src="https://www.figma.com/api/mcp/asset/6430bca7-df4e-4ab4-b2d8-9687dfc640ff" alt="Account" class="nav-icon-img">
+                                    </span>
+                                    <span class="nav-label">Account</span>
+                                </div>
+                            </div>
+
+                            <!-- Security -->
+                            <div class="nav-item-group">
+                                <div class="nav-item" data-page="security">
+                                    <span class="nav-icon">
+                                        <img src="https://www.figma.com/api/mcp/asset/d1e698c3-2cc8-49d7-8f04-38e52b57cd8e" alt="Security" class="nav-icon-img">
+                                    </span>
+                                    <span class="nav-label">Security</span>
+                                </div>
+                            </div>
+
+                            <!-- Notifications -->
+                            <div class="nav-item-group">
+                                <div class="nav-item" data-page="notifications">
+                                    <span class="nav-icon">
+                                        <img src="https://www.figma.com/api/mcp/asset/e237124d-afbd-43d0-82f8-08531cac241f" alt="Notifications" class="nav-icon-img">
+                                    </span>
+                                    <span class="nav-label">Notifications</span>
+                                </div>
+                            </div>
+
+                            <!-- Information -->
+                            <div class="nav-item-group">
+                                <div class="nav-item" data-page="information">
+                                    <span class="nav-icon">
+                                        <img src="https://www.figma.com/api/mcp/asset/88bb01e7-6e62-4289-9af4-25bb664d948f" alt="Information" class="nav-icon-img">
+                                    </span>
+                                    <span class="nav-label">Information</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </aside>
+
+                <!-- Right Content Area -->
+                <main class="content-area">
+                    <!-- General Page -->
+                    <div class="page-content" id="general">
+                        <h1 class="page-title">General</h1>
+                        <p class="page-description">Configure theme, language, and time zone settings.</p>
+                        
+                        <!-- Theme Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Theme</h2>
+                            <p class="section-description">Choose your preferred color theme.</p>
+                            <div class="form-section">
+                                <div class="form-field">
+                                    <label></label>
+                                    <select class="select-field" id="theme-select" name="theme">
+                                        <option value="system" selected>System</option>
+                                        <option value="light">Light</option>
+                                        <option value="dark">Dark</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Language Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Language</h2>
+                            <p class="section-description">Select your preferred language for the interface.</p>
+                            <div class="form-section">
+                                <div class="form-field">
+                                    <label></label>
+                                    <select class="select-field" id="language-select" name="language">
+                                        <option value="en" selected>English</option>
+                                        <option value="ko">Korean</option>
+                                    </select>
+                                    <p class="form-hint">Changes will be applied immediately. The UI may reload.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Time Zone Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Time Zone</h2>
+                            <p class="section-description">Select your time zone. This affects timestamps globally.</p>
+                            <div class="form-section">
+                                <div class="form-field">
+                                    <div class="toggle-item">
+                                        <div>
+                                            <label>Use current location</label>
+                                            <p class="form-hint" style="margin-top: 4px; margin-bottom: 0;">Automatically set time zone based on your location</p>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="timezone-auto-toggle">
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <label></label>
+                                    <select class="select-field timezone-select" id="timezone-select">
+                                        <option value="UTC">UTC (Coordinated Universal Time)</option>
+                                        <option value="America/New_York">America/New_York (Eastern Time)</option>
+                                        <option value="America/Chicago">America/Chicago (Central Time)</option>
+                                        <option value="America/Denver">America/Denver (Mountain Time)</option>
+                                        <option value="America/Los_Angeles">America/Los_Angeles (Pacific Time)</option>
+                                        <option value="Europe/London">Europe/London (GMT)</option>
+                                        <option value="Europe/Paris">Europe/Paris (CET)</option>
+                                        <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+                                        <option value="Asia/Seoul" selected>Asia/Seoul (KST)</option>
+                                        <option value="Asia/Shanghai">Asia/Shanghai (CST)</option>
+                                        <option value="Australia/Sydney">Australia/Sydney (AEDT)</option>
+                                    </select>
+                                    <p class="form-hint" id="timezone-display">Current: (GMT+9:00) Seoul</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account Page -->
+                    <div class="page-content" id="account" style="display: none;">
+                        <h1 class="page-title">Account</h1>
+                        <p class="page-description">Manage your account information, authentication, and activity.</p>
+                        
+                        <!-- Account Information Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Account Information</h2>
+                            <p class="section-description">View your account details.</p>
+                            <div class="form-section">
+                                <div class="form-field">
+                                    <label>Name</label>
+                                    <input type="text" value="John Doe" readonly class="readonly">
+                                </div>
+                                <div class="form-field">
+                                    <label>ID</label>
+                                    <input type="text" value="john.doe" readonly class="readonly">
+                                </div>
+                                <div class="form-field">
+                                    <label>Email</label>
+                                    <input type="email" value="john.doe@example.com" readonly class="readonly">
+                                </div>
+                                <div class="form-field">
+                                    <label>Group</label>
+                                    <input type="text" value="cloud-engineering" readonly class="readonly">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Authentication Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Authentication</h2>
+                            <p class="section-description">Manage your password and multi-factor authentication.</p>
+                            <div class="form-section">
+                                <div class="form-field">
+                                    <label>Password</label>
+                                    <div class="auth-action-group">
+                                        <input type="text" value="Last updated: 2024-01-10" readonly class="readonly">
+                                        <button class="btn-primary">Change Password</button>
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <label>MFA Status</label>
+                                    <div class="auth-action-group">
+                                        <input type="text" value="Enabled" readonly class="readonly">
+                                        <button class="btn-primary">Manage MFA</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Activity Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Activity</h2>
+                            <p class="section-description">View your recent account activity.</p>
+                            <div class="table-container">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>Action</th>
+                                            <th>Target</th>
+                                            <th>IP Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024-01-15 14:32:18</td>
+                                            <td>Login</td>
+                                            <td>System</td>
+                                            <td>192.168.1.100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024-01-15 13:45:22</td>
+                                            <td>Update Settings</td>
+                                            <td>General</td>
+                                            <td>192.168.1.100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024-01-15 10:20:15</td>
+                                            <td>Access Resource</td>
+                                            <td>Project Alpha</td>
+                                            <td>192.168.1.100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024-01-14 16:30:45</td>
+                                            <td>Change Password</td>
+                                            <td>Account</td>
+                                            <td>192.168.1.100</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Logout Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Logout</h2>
+                            <p class="section-description">Sign out from your account.</p>
+                            <div class="form-section">
+                                <button class="btn-primary btn-logout" id="logout-btn">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security Page -->
+                    <div class="page-content" id="security" style="display: none;">
+                        <h1 class="page-title">Security</h1>
+                        <p class="page-description">Manage SSH keys and certificates for secure access.</p>
+                        
+                        <!-- SSH Keys Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">SSH Keys</h2>
+                            <p class="section-description">Manage your SSH keys for secure authentication.</p>
+                            <div class="table-container">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Key Name</th>
+                                            <th>Fingerprint</th>
+                                            <th>Created At</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>MacBook Pro Key</td>
+                                            <td>SHA256:AbCdEf123456...</td>
+                                            <td>2024-01-10</td>
+                                            <td><button class="btn-secondary btn-danger btn-delete-key">Delete</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Work Laptop Key</td>
+                                            <td>SHA256:XyZ789AbCdEf...</td>
+                                            <td>2024-01-05</td>
+                                            <td><button class="btn-secondary btn-danger btn-delete-key">Delete</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table-actions">
+                                    <button class="btn-primary" id="add-ssh-key-btn">Add SSH Key</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certificates Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Certificates</h2>
+                            <p class="section-description">Manage your certificates for secure connections.</p>
+                            <div class="table-container">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Certificate Name</th>
+                                            <th>Type</th>
+                                            <th>Expiration Date</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Production Certificate</td>
+                                            <td>TLS</td>
+                                            <td>2024-12-31</td>
+                                            <td><span class="badge badge-info">Valid</span></td>
+                                            <td><button class="btn-secondary btn-danger btn-delete-cert">Delete</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Development Certificate</td>
+                                            <td>TLS</td>
+                                            <td>2024-06-30</td>
+                                            <td><span class="badge badge-warning">Expiring Soon</span></td>
+                                            <td><button class="btn-secondary btn-danger btn-delete-cert">Delete</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table-actions">
+                                    <button class="btn-primary" id="upload-cert-btn">Upload Certificate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notifications Page -->
+                    <div class="page-content" id="notifications" style="display: none;">
+                        <h1 class="page-title">Notifications</h1>
+                        <p class="page-description">Configure your notification preferences.</p>
+                        
+                        <!-- Notification Preferences Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Notification Preferences</h2>
+                            <p class="section-description">Choose how you want to receive notifications.</p>
+                            <div class="form-section">
+                                <div class="form-field">
+                                    <label>Channels</label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="channel" value="in-app" checked>
+                                            <span class="checkbox-label">In-app</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="channel" value="desktop" checked>
+                                            <span class="checkbox-label">Desktop</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="channel" value="email" disabled>
+                                            <span class="checkbox-label">Email <span class="disabled-hint">(Coming soon)</span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <label>Severity</label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="severity" value="critical" checked>
+                                            <span class="checkbox-label">Critical</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="severity" value="warning" checked>
+                                            <span class="checkbox-label">Warning</span>
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="severity" value="informational">
+                                            <span class="checkbox-label">Informational</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="form-hint">Changes apply immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Information Page -->
+                    <div class="page-content" id="information" style="display: none;">
+                        <h1 class="page-title">Information</h1>
+                        <p class="page-description">View version information, terms, and support resources.</p>
+                        
+                        <!-- Version Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Version</h2>
+                            <p class="section-description">Product and system version information.</p>
+                            <div class="form-section">
+                                <div class="info-section">
+                                    <div class="info-grid">
+                                        <div class="info-item">
+                                            <span class="info-label">Product Name</span>
+                                            <span class="info-value">Thaki Cloud Desktop UI</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">UI Version</span>
+                                            <span class="info-value">2.1.0</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <span class="info-label">Backend Version</span>
+                                            <span class="info-value">2.0.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terms Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Terms</h2>
+                            <p class="section-description">Legal documents and policies.</p>
+                            <div class="form-section">
+                                <div class="link-group">
+                                    <a href="#" class="link" target="_blank">Terms of Service</a>
+                                    <a href="#" class="link" target="_blank">Privacy Policy</a>
+                                    <a href="#" class="link" target="_blank">Open Source Licenses</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Support Section -->
+                        <div class="content-section">
+                            <h2 class="section-title">Support</h2>
+                            <p class="section-description">Get help and access resources.</p>
+                            <div class="form-section">
+                                <div class="link-group">
+                                    <a href="#" class="link" target="_blank">Official Website</a>
+                                    <a href="#" class="link" target="_blank">Documentation</a>
+                                    <a href="#" class="link" target="_blank">Support Center</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="modal-overlay" id="logout-modal" style="display: none;">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Confirm Logout</h3>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to logout? You will be redirected to the login screen.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="logout-cancel-btn">Cancel</button>
+                <button class="btn-primary" id="logout-confirm-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chatbot Panel -->
+    <div class="chatbot-panel" id="chatbot-panel">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <button class="chatbot-close-btn" id="chatbot-close-btn" title="Close">
+                <span>←</span>
+            </button>
+            <button class="chatbot-back-btn" id="chatbot-back-btn" style="display: none;">
+                <span>←</span>
+            </button>
+            <h3 class="chatbot-title" id="chatbot-title">New chat</h3>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="chatbot-content" id="chatbot-content">
+            <!-- Chat View -->
+            <div class="chatbot-chat-view" id="chatbot-chat-view">
+                <div class="chatbot-messages" id="chatbot-messages">
+                    <!-- Empty State -->
+                    <div class="chatbot-empty-state" id="chatbot-empty-state">
+                        <p class="chatbot-welcome-text">Tell me what you need</p>
+                        <div class="chatbot-suggestions">
+                            <button class="chatbot-suggestion-btn" data-prompt="Deploy workloads">Deploy workloads</button>
+                            <button class="chatbot-suggestion-btn" data-prompt="Manage cloud instances">Manage cloud instances</button>
+                            <button class="chatbot-suggestion-btn" data-prompt="Check resource status">Check resource status</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History View -->
+            <div class="chatbot-history-view" id="chatbot-history-view" style="display: none;">
+                <div class="chatbot-history-list" id="chatbot-history-list">
+                    <!-- History items will be dynamically added here -->
+                </div>
+                <button class="chatbot-new-chat-btn" id="chatbot-new-chat-btn">New chat</button>
+            </div>
+        </div>
+
+        <!-- Message Composer (only visible in chat view) -->
+        <div class="chatbot-composer" id="chatbot-composer">
+            <div class="chatbot-footer-controls">
+                <select class="chatbot-model-select" id="chatbot-model-select">
+                    <option value="default">Default</option>
+                    <option value="gpt">GPT</option>
+                    <option value="local">Local</option>
+                </select>
+                <button class="chatbot-mcp-toggle" id="chatbot-mcp-toggle" title="MCP">
+                    <span>MCP</span>
+                </button>
+            </div>
+            <div class="chatbot-input-wrapper">
+                <textarea 
+                    class="chatbot-input" 
+                    id="chatbot-input" 
+                    placeholder="Ask me anything"
+                    rows="1"></textarea>
+                <button class="chatbot-send-btn" id="chatbot-send-btn" title="Send">
+                    <span>→</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Keyboard Shortcut Hint -->
+    <div class="keyboard-hint" id="keyboard-hint"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
