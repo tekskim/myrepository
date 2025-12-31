@@ -1,0 +1,13 @@
+{
+  "name": "desktop-ui",
+  "version": "1.0.0",
+  "description": "Desktop UI Settings Application",
+  "scripts": {
+    "dev": "browser-sync start --server --files '*.html, *.css, *.js' --no-open",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}
+
